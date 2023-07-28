@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="header-section">
+      <h1 class="header">Simple, traffic-based pricing</h1>
+      <div class="flex-header">
+        <p class="paragraph">sign-up for our 30-day trail.</p>
+
+        <p class="paragraph ">no credit card required</p>
+      </div>
+    </div>
+
+    <main>
+      <section class="grid padding">
+        <p class="paragraph grid-col-span-1">100K PAGEVIEWS</p>
+        <div class="slider-container grid-col-span-3">
+          <input type="range" min="0" max="100" value="10" id="slider" />
+          <div id="selector">
+            <div id="selectBtn"></div>
+          </div>
+          <div id="progress-bar"></div>
+        </div>
+        <div class="flex grid-position">
+          <p class="total-price" ><span id="total-price">$00</span>.00</p>
+          <p class="paragraph">/ month</p>
+        </div>
+      </section>
+      <section class="flex padding discount-section">
+        <p class="paragraph font-sizing">monthly billing</p>
+        <div class="toggle-container">
+          <input type="checkbox" name="toggle" id="toggle-btn" />
+          <label for="toggle-btn" class="toggle-label"></label>
+        </div>
+        <div class="flex">
+          <p class="paragraph font-sizing">yealry billing</p>
+          <p class="danger">-25% <span class="discount">Discount</span></p>
+        </div>
+      </section>
+      <hr />
+      <section class="flex-desktop padding">
+        <div class="container">
+          <div class="flex-space">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+              <path
+                fill="none"
+                stroke="#10D8C4"
+                stroke-width="2"
+                d="M1 4.134l1.907 1.908L7.949 1"
+              />
+            </svg>
+            <p class="paragraph font-sizing">unlimited websites</p>
+          </div>
+          <div class="flex-space">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+              <path
+                fill="none"
+                stroke="#10D8C4"
+                stroke-width="2"
+                d="M1 4.134l1.907 1.908L7.949 1"
+              />
+            </svg>
+            <p class="paragraph font-sizing">100% data websites</p>
+          </div>
+          <div class="flex-space">
+            <svg xmlns="http://www.w3.org/2000/svg" width="9" height="8">
+              <path
+                fill="none"
+                stroke="#10D8C4"
+                stroke-width="2"
+                d="M1 4.134l1.907 1.908L7.949 1"
+              />
+            </svg>
+            <p class="paragraph font-sizing">email report</p>
+          </div>
+        </div>
+        <div class="btn-container">
+          <button class="start-btn" id="start-btn">start my trail</button>
+        </div>
+      </section>
+    </main>
+    <script src="index.js"></script>
+  </body>
+</html>
