@@ -7,28 +7,26 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="header-section">
-      <h1 class="header">Simple, traffic-based pricing</h1>
-      <div class="flex-header">
-        <p class="paragraph">sign-up for our 30-day trail.</p>
-
-        <p class="paragraph ">no credit card required</p>
+    <header>
+      <div class="header-section">
+        <h1 class="header">Simple, traffic-based pricing</h1>
+        <div class="flex-header">
+          <p class="paragraph">sign-up for our 30-day trail.</p>
+          <p class="paragraph ">no credit card required</p>
+        </div>
       </div>
-    </div>
+    </header>
 
     <main>
       <section class="grid padding">
-        <p class="paragraph grid-col-span-1">100K PAGEVIEWS</p>
+        <p class="paragraph grid-col-span-1"><span class="views">100K</span> PAGEVIEWS</p>
         <div class="slider-container grid-col-span-3">
-          <input type="range" min="0" max="100" value="10" id="slider" />
-          <div id="selector">
-            <div id="selectBtn"></div>
-          </div>
-          <div id="progress-bar"></div>
+          <input type="range"  min="1" max="5" value="3" step="1" id="slider" />
+          <label for="slider"></label>
         </div>
         <div class="flex grid-position">
-          <p class="total-price" ><span id="total-price">$00</span>.00</p>
-          <p class="paragraph">/ month</p>
+          <p class="total-price"><span class="price">$16</span>.00</p>
+          <p class="paragraph seasons">/ month</p>
         </div>
       </section>
       <section class="flex padding discount-section">
@@ -39,7 +37,7 @@
         </div>
         <div class="flex">
           <p class="paragraph font-sizing">yealry billing</p>
-          <p class="danger">-25% <span class="discount">Discount</span></p>
+          <p class="danger"><span class="percent">-25% </span><span class="discount">Discount</span></p>
         </div>
       </section>
       <hr />
